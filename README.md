@@ -11,8 +11,9 @@ This is a running record of what each contribution taught us, so the next one st
 | [JupyterLab](jupyterlab/) | #20377 — Markdown search | [#20432](https://github.com/jupyterlab/jupyterlab/pull/20432) | Open | Check the neighbours — a fix for Find can break Replace. |
 | [JupyterLab](jupyterlab/) | #18737 — yjs bump | [#20436](https://github.com/jupyterlab/jupyterlab/pull/20436) | Open, blocked upstream | An upstream blocker can park a green, approved PR. |
 | [JupyterLab](jupyterlab/) | #20367 — Already fixed | — | Closed, no PR | Always check the bug is still present on current main before writing any code. |
+| [JupyterLab](jupyterlab/) | #18830 — Terminal brackets | — | Closed, no PR | A guess on record is not proof — a control test is what settles where a bug lives. |
 | [Jitsi Meet](jitsi-meet/) | #6873 — Lobby cancel | [#18189](https://github.com/jitsi/jitsi-meet/pull/18189) | Open | Be honest in the PR body about what was not verified. |
 | [Jitsi Meet](jitsi-meet/) | #17772 — Investigation | — | Parked | Investigate before committing to a fix; a parked issue with notes is still progress. |
 | [Humanize](humanize/) | #496 — intcomma | [#502](https://github.com/python-humanize/humanize/pull/502) | Closed, not merged | Check for duplicate or existing fixing PRs before building. |
 | [SHAP](shap/) | #3066 — TreeSHAP sum | [#5275](https://github.com/shap/shap/pull/5275) | Merged | A one-line fix in the right place is a real contribution. |
-| [fast-glob](fast-glob/) | #547 — stats drops nested files | — | Awaiting decision | The bug can live in a published dependency, not the repo itself. |
+| [fast-glob](fast-glob/) | #547 — stats drops nested files | [#550](https://github.com/mrmlnc/fast-glob/pull/550) | Open | The bug can live in a published dependency, not the repo itself. |
