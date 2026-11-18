@@ -11,7 +11,7 @@ Three of the six pull requests here are merged. The other three are open and wai
 | #20373 — Windowing snapback | [#20387](https://github.com/jupyterlab/jupyterlab/pull/20387) | Merged 2026-11-06 | [20373-windowing-snapback.md](20373-windowing-snapback.md) |
 | #20384 — Mermaid theme | [#20406](https://github.com/jupyterlab/jupyterlab/pull/20406) | Merged 2026-11-06 | [20384-mermaid-theme.md](20384-mermaid-theme.md) |
 | #20363 — Console config | [#20431](https://github.com/jupyterlab/jupyterlab/pull/20431) | Merged 2026-11-11 | [20363-console-config.md](20363-console-config.md) |
-| #19486 — Settings search | [#20414](https://github.com/jupyterlab/jupyterlab/pull/20414) | Open, ready for review | [19486-settings-search.md](19486-settings-search.md) |
+| #19486 — Settings search | [#20414](https://github.com/jupyterlab/jupyterlab/pull/20414) | Open, extended to System Defaults | [19486-settings-search.md](19486-settings-search.md) |
 | #20377 — Markdown search | [#20432](https://github.com/jupyterlab/jupyterlab/pull/20432) | Open, CI green | [20377-markdown-search.md](20377-markdown-search.md) |
 | #18737 — yjs bump | [#20436](https://github.com/jupyterlab/jupyterlab/pull/20436) | Open, blocked upstream | [18737-yjs-bump.md](18737-yjs-bump.md) |
 | #20367 — Shortcut settings | — | Closed, already fixed | [20367-already-fixed.md](20367-already-fixed.md) |
@@ -27,6 +27,6 @@ Write the test commit before the fix commit. If the fix is already pushed, add t
 
 Do not open a PR for an issue labelled `status:Needs Triage` unless it was filed by a maintainer or by the person you are working with. When triage is unsettled, ask in a comment first.
 
-Run prettier and the ESLint typecheck on every changed file before pushing, and rebuild compiled output (`jlpm build:test`) before running Jest — Jest loads the compiled `lib/`, not `src/`. Never state in the PR description that tests or lint passed. The AI usage section must name every tool and model used, plus the effort level.
+Run prettier and the ESLint typecheck on every changed file before pushing, and rebuild compiled output (`jlpm build:test`) before running Jest — Jest loads the compiled `lib/`, not `src/`. Never state in the PR description that tests or lint passed. The AI usage section must name every tool and model used, plus the effort level. Note that a clean ESLint typecheck is not proof the code compiles — only the `tsc` build catches type errors like a bad return type, and a failed build leaves stale `lib/` behind that makes the next typecheck report phantom errors against old declarations.
 
 Interaction changes need a video or GIF, attached in the web UI and never committed. A PR body must never reference a video or screenshot that does not yet exist, and a video must not be described as verified until its frames have actually been watched. Never claim a test passed that has not run.
