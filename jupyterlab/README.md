@@ -16,6 +16,7 @@ Three of the six pull requests here are merged. The other three are open and wai
 | #18737 — yjs bump | [#20436](https://github.com/jupyterlab/jupyterlab/pull/20436) | Open, blocked upstream | [18737-yjs-bump.md](18737-yjs-bump.md) |
 | #20367 — Shortcut settings | — | Closed, already fixed | [20367-already-fixed.md](20367-already-fixed.md) |
 | #18830 — Terminal brackets | — | Closed, no PR — PowerShell 5.1 root cause | [18830-terminal-brackets.md](18830-terminal-brackets.md) |
+| #19481 — tkinter dialog behind browser | — | Open, no PR — repro + findings comment | [19481-tkinter-dialog.md](19481-tkinter-dialog.md) |
 
 ## Lessons that apply to every JupyterLab PR
 
