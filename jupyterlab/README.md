@@ -2,7 +2,7 @@
 
 JupyterLab is the main track of the GSoC 2027 preparation: small, testable, policy-clean starter issues in [jupyterlab/jupyterlab](https://github.com/jupyterlab/jupyterlab), worked from Kumar's fork [KUMAR-AKASH-M/jupyterlab](https://github.com/KUMAR-AKASH-M/jupyterlab). There is no CLA, and the repo welcomes AI-assisted contributions held to its highest quality bar. Since 2026-11-07 the work is laptop-first: Kumar's Antigravity agent on his laptop applies patches, runs Jest and lint, pushes, and records videos, while Doremon designs the fix and verifies it with harnesses. The handover rule that keeps that split safe is simple — confirm `git branch` and `git status` in a separate turn before any `git am`, push, or PR step, and never bundle a recovery with the next apply step.
 
-Three of the six pull requests here are merged. The other three are open and waiting on maintainers, which is itself a lesson: a contribution is not finished when the code is right.
+Three of the seven pull requests here are merged. Three are open and waiting on maintainers, and one (#20607) was closed with its fix carried into jupyter-builder as co-authored work, which is itself a lesson: a contribution is not finished when the code is right.
 
 ## Contributions
 
@@ -14,6 +14,7 @@ Three of the six pull requests here are merged. The other three are open and wai
 | #19486 — Settings search | [#20414](https://github.com/jupyterlab/jupyterlab/pull/20414) | Open, extended to System Defaults | [19486-settings-search.md](19486-settings-search.md) |
 | #20377 — Markdown search | [#20432](https://github.com/jupyterlab/jupyterlab/pull/20432) | Open, CI green | [20377-markdown-search.md](20377-markdown-search.md) |
 | #18737 — yjs bump | [#20436](https://github.com/jupyterlab/jupyterlab/pull/20436) | Open, blocked upstream | [18737-yjs-bump.md](18737-yjs-bump.md) |
+| #20605 — Strict `>` lower bound | [#20607](https://github.com/jupyterlab/jupyterlab/pull/20607) | Closed, fix carried into jupyter-builder#215 as co-author | [20605-strict-lower-bound.md](20605-strict-lower-bound.md) |
 | #20367 — Shortcut settings | — | Closed, already fixed | [20367-already-fixed.md](20367-already-fixed.md) |
 | #18830 — Terminal brackets | — | Closed, no PR — PowerShell 5.1 root cause | [18830-terminal-brackets.md](18830-terminal-brackets.md) |
 | #19481 — tkinter dialog behind browser | — | Open, no PR — repro + findings comment | [19481-tkinter-dialog.md](19481-tkinter-dialog.md) |
@@ -22,7 +23,7 @@ Three of the six pull requests here are merged. The other three are open and wai
 
 These came out of the work above, mostly from maintainer feedback, and they are worth reading before starting the next issue.
 
-PR descriptions must be short and human-readable — flowing paragraphs, no forced line breaks, no verbosity, and never a "Verification status" section. CI reports tests and reviewers verify; saying so in the description only makes it harder to read. That was krassowski's feedback on 2026-11-09, and it applies to every future PR body from the first draft.
+PR descriptions must be short and human-readable — flowing paragraphs, no forced line breaks, no verbosity, and never a "Verification status" section. CI reports tests and reviewers verify; saying so in the description only makes it harder to read. That was krassowski's feedback on 2026-11-09, and it applies to every future PR body from the first draft. Always follow the repo's PR template from the first draft too — read the template before writing the description and use its sections. #20607 was filed free-form and Darshan808 asked for the template; never submit a non-template description again.
 
 Write the test commit before the fix commit. If the fix is already pushed, add the test in a new commit and do not rebase during a review. A test skip needs a failing run behind it, not a line copied from the neighbouring test.
 
